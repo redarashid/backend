@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "proudects",
+  "info": {
+    "singularName": "proudect",
+    "pluralName": "proudects",
+    "displayName": "proudect"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "proudectImg": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "proudectTitle": {
+      "type": "string",
+      "required": true
+    },
+    "proudectNumber": {
+      "type": "decimal",
+      "required": true
+    },
+    "proudectDescription": {
+      "type": "text",
+      "required": true
+    },
+    "proudectRating": {
+      "type": "decimal",
+      "required": true
+    },
+    "proudectCategory": {
+      "type": "enumeration",
+      "enum": [
+        "men",
+        "woman"
+      ],
+      "required": true
+    }
+  }
+}
